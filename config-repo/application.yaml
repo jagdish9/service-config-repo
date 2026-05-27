@@ -1,23 +1,10 @@
-server:
-  port: 7000
-
 spring:
-  application:
-    name: service-config-repo
   datasource:
     hikari:
       maximum-pool-size: 10
   kafka:
     bootstrap-servers: localhost:9092
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/jagdish9/service-config-repo
-          default-label: main
-          clone-on-start: true
 
 logging:
   level:
     root: INFO
-    org.springframework.cloud: DEBUG
