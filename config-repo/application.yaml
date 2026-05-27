@@ -14,9 +14,12 @@ spring:
       server:
         git:
           uri: https://github.com/jagdish9/service-config-repo
+          username: jagdish9
+          password: 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
           default-label: main
           clone-on-start: true
 
 logging:
   level:
     root: INFO
+    org.springframework.cloud: DEBUG
