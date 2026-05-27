@@ -1,0 +1,12 @@
+server:
+  port: 7010
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mvn-db
+    username: root
+    password: mysql25
+
+topic:
+  mvn-loaded: mvn-load-topic

@@ -1,0 +1,12 @@
+server:
+  port: 7012
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dependency-db
+    username: root
+    password: mysql25
+
+topic:
+  dependency-loaded: dependency-load-topic
