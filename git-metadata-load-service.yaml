@@ -7,6 +7,13 @@ spring:
     url: jdbc:mysql://localhost:3306/git-db
     username: root
     password: mysql25
+  kafka:
+    consumer:
+      group-id: git-metadata-group
+      enable-auto-commit: false
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeSerializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
 
 topic:
   git-loaded: git-load-topic
